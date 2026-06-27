@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --font-belle-fair: "Bellefair", sans-serif;
+  --font-barlow: "Barlow", serif;
+  --font-barlow-condensed: "Barlow Condensed", serif;
+
+  --bg-home-desktop: url("/assets/home/background-home-desktop.jpg");
+  --bg-home-tablet: url("/assets/home/background-home-tablet.jpg");
+  --bg-home-mobile: url("/assets/home/background-home-mobile.jpg");
+  --bg-destination-desktop: url("/assets/destination/background-destination-desktop.jpg");
+  --bg-destination-tablet: url("/assets/destination/background-destination-tablet.jpg");
+  --bg-destination-mobile: url("/assets/destination/background-destination-mobile.jpg");
+  --bg-crew-desktop: url("/assets/crew/background-crew-desktop.jpg");
+  --bg-crew-tablet: url("/assets/crew/background-crew-tablet.jpg");
+  --bg-crew-mobile: url("/assets/crew/background-crew-mobile.jpg");
+  --bg-technology-desktop: url("/assets/technology/background-technology-desktop.jpg");
+  --bg-technology-tablet: url("/assets/technology/background-technology-tablet.jpg");
+  --bg-technology-mobile: url("/assets/technology/background-technology-mobile.jpg");
+
+  --color-blue-300: #d0d6f9;
+  --color-blue-900: #0b0d17;
+}
