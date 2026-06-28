@@ -1,6 +1,6 @@
 import { Button } from "@base-ui/react/button";
 import { Separator } from "@base-ui/react/separator";
-import { Outlet, useLocation } from "react-router";
+import { Link, Outlet, useLocation } from "react-router";
 import Drawer from "~/components/drawer";
 import Logo from "~/components/logo";
 
@@ -30,7 +30,9 @@ export const Layout = () => {
       className={`flex flex-col min-h-screen min-h-dvh bg-blue-900 bg-center bg-no-repeat bg-fixed bg-cover ${background}`}
     >
       <header className="flex items-center justify-between p-6 md:p-0 md:pl-10 lg:mt-10 lg:pl-16">
-        <Logo />
+        <Link to={HOME}>
+          <Logo />
+        </Link>
         <Separator className="hidden lg:block grow h-px bg-[#979797]/25 translate-x-8 z-10" />
         <NavigationMenu />
         <Drawer
