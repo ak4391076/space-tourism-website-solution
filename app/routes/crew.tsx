@@ -86,10 +86,10 @@ export const Crew = () => {
             <div className="flex justify-center lg:items-center">
               <picture className="h-auto max-w-3xs md:max-w-md lg:max-w-134.75 md:-mb-10 lg:mb-0 mask-alpha mask-b-from-77% mask-b-from-[#d9d9d9] mask-b-to-100%">
                 <source
-                  srcSet={`${import.meta.env.BASE_URL}${crewState.images.png}`}
+                  srcSet={`${import.meta.env.BASE_URL}${crewState.images.webp}`}
                 />
                 <img
-                  src={`${import.meta.env.BASE_URL}${crewState.images.webp}`}
+                  src={`${import.meta.env.BASE_URL}${crewState.images.png}`}
                   alt={crewState.name}
                 />
               </picture>
