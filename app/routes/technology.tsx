@@ -24,12 +24,12 @@ export const Technology = () => {
             <div className="pt-16 lg:pt-0">
               <img
                 className="block lg:hidden h-64.5 md:h-89.5 -mx-6 md:-mx-10 max-w-none w-[calc(100%+3rem)] md:w-[calc(100%+5rem)] object-cover"
-                src={technologyState.images.landscape}
+                src={`${import.meta.env.BASE_URL}${technologyState.images.landscape}`}
                 alt={technologyState.name}
               />
               <img
                 className="hidden lg:block h-150 max-w-full"
-                src={technologyState.images.portrait}
+                src={`${import.meta.env.BASE_URL}${technologyState.images.portrait}`}
                 alt={technologyState.name}
               />
             </div>

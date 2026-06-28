@@ -26,10 +26,12 @@ export const Destination = () => {
           <div className="flex flex-col gap-8 lg:flex-row lg:h-183.5">
             <div className="flex justify-center lg:items-center lg:grow lg:max-w-[50%]">
               <picture>
-                <source srcSet={destinationState.images.png} />
+                <source
+                  srcSet={`${import.meta.env.BASE_URL}${destinationState.images.png}`}
+                />
                 <img
                   className="h-auto max-w-37.5 md:max-w-75 lg:max-w-full my-6.5 md:my-10.5"
-                  src={destinationState.images.webp}
+                  src={`${import.meta.env.BASE_URL}${destinationState.images.webp}`}
                   alt=""
                 />
               </picture>

@@ -9,17 +9,6 @@ import { ROUTES } from "~/constants";
 
 const { HOME, DESTINATION, CREW, TECHNOLOGY } = ROUTES;
 
-// const backgrounds: Record<string, string> = {
-//   [HOME]:
-//     "bg-[url('/assets/home/background-home-mobile.jpg')] md:bg-[url('/assets/home/background-home-tablet.jpg')] lg:bg-[url('/assets/home/background-home-desktop.jpg')]",
-//   [DESTINATION]:
-//     "bg-[url('/assets/destination/background-destination-mobile.jpg')] md:bg-[url('/assets/destination/background-destination-tablet.jpg')] lg:bg-[url('/assets/destination/background-destination-desktop.jpg')]",
-//   [CREW]:
-//     "bg-[url('/assets/crew/background-crew-mobile.jpg')] md:bg-[url('/assets/crew/background-crew-tablet.jpg')] lg:bg-[url('/assets/crew/background-crew-desktop.jpg')]",
-//   [TECHNOLOGY]:
-//     "bg-[url('/assets/technology/background-technology-mobile.jpg')] md:bg-[url('/assets/technology/background-technology-tablet.jpg')] lg:bg-[url('/assets/technology/background-technology-desktop.jpg')]",
-// };
-
 const backgrounds: Record<string, string> = {
   [HOME]:
     "bg-(image:--bg-home-mobile) md:bg-(image:--bg-home-tablet) lg:bg-(image:--bg-home-desktop)",
@@ -34,8 +23,7 @@ const backgrounds: Record<string, string> = {
 export const Layout = () => {
   const location = useLocation();
 
-  // TODO - add default option
-  const background = backgrounds[location.pathname];
+  const background = backgrounds[location.pathname] || backgrounds[HOME];
 
   return (
     <div
@@ -49,7 +37,7 @@ export const Layout = () => {
           render={
             <Button className="md:hidden">
               <img
-                src="/assets/shared/icon-hamburger.svg"
+                src={`${import.meta.env.BASE_URL}assets/shared/icon-hamburger.svg`}
                 alt="Hamburger icon to open navigation menu"
               />
             </Button>
