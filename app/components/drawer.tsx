@@ -19,7 +19,10 @@ const Drawer = (props: DrawerPrimitive.Trigger.Props) => {
             <DrawerPrimitive.Content className="mx-auto w-full max-w-[32rem]">
               <div className="flex justify-end pr-6 mb-20">
                 <DrawerPrimitive.Close className="select-none">
-                  <img src="/assets/shared/icon-close.svg" alt="Close menu" />
+                  <img
+                    src={`${import.meta.env.BASE_URL}assets/shared/icon-close.svg`}
+                    alt="Close menu`"
+                  />
                 </DrawerPrimitive.Close>
               </div>
               <NavigationMenuSm setOpen={setOpen} />
