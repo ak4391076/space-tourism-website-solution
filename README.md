@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
-- [Live site](https://your-live-site-url.com)
+- [Solution](https://github.com/ak4391076/space-tourism-website-solution)
+- [Live site](https://ak4391076.github.io/space-tourism-website-solution/)
 
 ## My process
 
