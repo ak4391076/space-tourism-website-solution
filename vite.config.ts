@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/blog-preview-card-solution/",
+  base: "/blog-preview-card-solution",
   plugins: [tailwindcss(), reactRouter()],
   resolve: {
     tsconfigPaths: true,
