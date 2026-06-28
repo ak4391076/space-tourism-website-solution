@@ -4,7 +4,6 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   base: "/blog-preview-card-solution/",
-  envDir: false,
   plugins: [tailwindcss(), reactRouter()],
   resolve: {
     tsconfigPaths: true,
