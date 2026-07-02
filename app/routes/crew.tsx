@@ -76,6 +76,7 @@ export const Crew = () => {
                       key={member.name}
                       className="flex h-2.5 w-2.5 lg:h-3.75 lg:w-3.75 items-center justify-center rounded-full select-none bg-white data-active:opacity-100 hover:data-active:opacity-100 not-data-selected:opacity-10 hover:not-data-selected:opacity-50 cursor-pointer"
                       value={member.name}
+                      aria-label={member.name}
                     >
                       &nbsp;
                     </Tabs.Tab>
